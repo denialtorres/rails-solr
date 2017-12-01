@@ -1,0 +1,53 @@
+// Place all the styles related to the search controller here.
+// They will automatically be included in application.css.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.classic-header{
+  background-color: #38003c;
+  padding: 5px 15px;
+  color: white;
+  margin-top: 70px;
+}
+
+
+.app-logo{
+
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.main-form-inputs{
+  width:100%;
+}
+
+.player-number{
+  font-size: 66px;
+  color: #999999;
+  text-align: center;
+  padding: 0px;
+}
+
+.player-details{
+  padding:0px !important;
+}
+
+.player-stats{
+  margin-top: 3px;
+}
+
+.search-links{
+
+  a{
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+
+      color: white;
+      text-decoration: none;
+
+    }
+  }
+}

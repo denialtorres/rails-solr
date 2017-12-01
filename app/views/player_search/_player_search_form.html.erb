@@ -1,0 +1,24 @@
+
+<div class="col-xs-12">
+
+  <form class="form-inline" method="post" action="/search_players" id="search-form">
+    <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group main-form-inputs">
+          <input type="text" name="term" id="term" class="form-control" value="<%= params[:term] %>" placeholder="Search by name, club...">
+          <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Search</button>
+      </span>
+        </div>
+      </div>
+      <div class="checkbox col-xs-12">
+        <br>
+        <label>
+          <input type="checkbox" name="active_only" value="true" <%= params[:active_only] == "true" ? "checked" : "" %>> Only those who played for more than 100 minutes
+        </label>
+      </div>
+    </div>
+  </form>
+</div>
